@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALURAflix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -150px; /* Inicia fora da tela */
+            width: 40px;
+            height: 40px;
+            background-color: rgba(185, 34, 34, 0.5);
+            border-radius: 50%;
+            animation: rise 10s infinite ease-in-out;
+        }
+
+        /* Animação do movimento das bolhas */
+        @keyframes rise {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Criando múltiplas bolhas com tamanhos e animações diferentes */
+        .bubble:nth-child(1) {
+            left: 20%;
+            width: 80px;
+            height: 80px;
+            animation-duration: 8s;
+        }
+
+        .bubble:nth-child(2) {
+            left: 40%;
+            width: 40px;
+            height: 40px;
+            animation-duration: 10s;
+            animation-delay: 1s;
+        }
+
+        .bubble:nth-child(3) {
+            left: 60%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+
+        .bubble:nth-child(4) {
+            left: 80%;
+            width: 100px;
+            height: 100px;
+            animation-duration: 14s;
+            animation-delay: 3s;
+        }
+
+        .bubble:nth-child(5) {
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            animation-duration: 6s;
+            animation-delay: 4s;
+        }
+
+    </style>
+</head>
+<body id="style">
+
+    <audio autoplay loop>
+        <source src="" type="audio/mpeg">
+        
+    </audio>
+    
+    <div class="container">
+        <strong><header class="cabecalho">ALURAFLIX</header></strong>
+
+        <button onclick="temaClaro()">Tema claro</button>
+        <button onclick="temaEscuro()">Tema escuro</button>
+
+        <strong><h2>O QUE É ESSA COISA NO MEU QUINTAL?</h2></strong>
+        <div class="video">
+            <iframe width="670" height="377" src="https://www.youtube.com/embed/NNSmaWiecMQ" title="O QUE É ESSA COISA NO MEU QUINTAL?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="hsht">
+           <a href="https://www.youtube.com/@Daishikawa1"> #canaldaishikawahorrors</a> 
+        </div>
+        <div class="texto">
+            Vídeo criado por <strong class="nome">Daishikawa</strong>, um youtuber que faz conteúdos focados no horror analógico e seu diversos.
+            O vídeo consiste em uma página de um usuário do twitter(X) que anda vendo coisas estranhas 
+            em sua casa, acompanhe até quando o usuário ficou vivo.
+        </div>
+
+        <section id="outros">
+            <h2>Horror videos</h2>
+            <div class="box1"> 
+                <a href="https://youtu.be/Ur1y5pod4DI?si=vgQ3x0O4VSEFET28">
+                    <img src="" alt="">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </div>
+        </section>
+    </div> <!-- fecha container -->
+
+    <aside>
+        <div id="menu-opener" onclick="menu()">
+            <img src="image/menu.png" width="36">
+        </div>
+        <div id="menu-area" >
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+    </aside> 
+
+    <!-- animação  -->
+    <div class="container">
+        <!-- Várias bolhas com diferentes tamanhos e comportamentos -->
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
