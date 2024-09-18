@@ -37,34 +37,34 @@ strong h2{
 
 /*definição do efeito hover*/
 .video:hover{
-    transform: scale(1.1);
-    
+    transform: scale(1.1);  
 }
 .hsht a{
     margin: 15px;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    color: red;
+    color: red; 
 }
 .texto{
-    justify-content: start;
+    justify-content: center;
     width: 380px;
-
 }
 .texto strong{
     color: yellow;
+    justify-content: center;
 }
 button{
-   width: 80px;
-   height: 35px;
+    width: 80px;
+    height: 35px;
     border: 2px solid red;
     background-color: black;
     color:white;
-    border-radius: 20px
-
+    border-radius: 20px;
 }
 
+
+/*edição do menu*/
 aside {
     position:fixed;
     top:0;
@@ -72,6 +72,11 @@ aside {
     z-index:999;
     display:flex;
 }
+aside ul li{
+    text-align: center;
+    text-decoration: none;
+}
+
 #menu-opener {
     width:40px;
     height:40px;
@@ -100,4 +105,20 @@ aside {
 #menu-area li:hover {
     background:#DDD;
 }
+.box{
+    display: flex;
+    justify-content: center;
+}
+img {
+    height: 200px;
+    margin: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.1);  
+}
+
+
 
